@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginStart="20sp"
+    android:layout_marginTop="20sp"
+    android:id="@+id/itemcard"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:fontFamily="monospace"
+        android:textSize="10sp"
+        tools:text="number: 1 " />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:paddingBottom="10sp"
+        android:shadowColor="#959595"
+        android:shadowDy="10"
+        android:shadowRadius="10"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:text="Topic" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/name"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="15sp"
+            android:fontFamily="monospace"
+            android:textColor="#AAAAAA"
+            android:textSize="10sp"
+            tools:text="Samsung" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

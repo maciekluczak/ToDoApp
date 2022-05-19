@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginStart="20sp"
+    android:layout_marginTop="20sp"
+    android:id="@+id/itemcard"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <TextView
+        android:fontFamily="monospace"
+        android:textSize="10sp"
+        android:id="@+id/id"
+        android:layout_toLeftOf="@id/name"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text = "ID: 1 "/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_below="@+id/id"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        android:shadowColor="#959595"
+        android:shadowRadius="10"
+        android:paddingBottom="10sp"
+        android:shadowDy="10"
+
+
+        tools:text = "John Doe"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/name">
+
+        <TextView
+            android:id="@+id/company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:fontFamily="monospace"
+            android:textColor="#AAAAAA"
+            android:layout_marginEnd="15sp"
+            tools:text = "Samsung"/>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:fontFamily="monospace"
+            android:textColor="#AAAAAA"
+            android:layout_marginEnd="15sp"
+            android:layout_toRightOf="@+id/company"
+
+            tools:text = "email@gmail.com"/>
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:fontFamily="monospace"
+            android:textColor="#AAAAAA"
+            android:layout_marginEnd="15sp"
+            android:layout_toRightOf="@+id/email"
+
+            tools:text = "Berlin"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

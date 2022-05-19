@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Personal_Data">
+
+  <RelativeLayout
+      android:id="@+id/more"
+      android:layout_marginTop="5sp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="20sp"
+      android:layout_marginLeft="20sp"
+      android:layout_marginBottom="5sp">
+
+    <Button
+        android:id="@+id/posts"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/person_icon_background"
+        android:text="Posts"
+        android:textColor="@color/teal_700" />
+
+    <Button
+        android:id="@+id/Tasks"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/person_icon_background"
+        android:text="Tasks"
+        android:textColor="@color/teal_700" />
+
+  </RelativeLayout>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_below="@id/more"
+      android:id="@+id/userView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+</RelativeLayout>

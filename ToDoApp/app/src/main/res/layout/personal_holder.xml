@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_marginTop="5sp"
+    android:id="@+id/itemcard"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50sp"
+        android:layout_toLeftOf="@id/name"
+        android:fontFamily="monospace"
+        android:textSize="10sp"
+        tools:text="ID: 1 " />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:paddingBottom="10sp"
+        android:shadowColor="#959595"
+        android:shadowDy="10"
+        android:shadowRadius="10"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+
+
+        tools:text="John Doe" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/name"
+        android:id="@+id/data">
+
+        <TextView
+            android:id="@+id/company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15sp"
+            android:fontFamily="monospace"
+            android:textColor="#AAAAAA"
+            android:textSize="10sp"
+            tools:text="Samsung" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:fontFamily="monospace"
+            android:textColor="#AAAAAA"
+            android:layout_marginEnd="15sp"
+            android:layout_toRightOf="@+id/company"
+
+            tools:text = "email@gmail.com"/>
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:fontFamily="monospace"
+            android:textColor="#AAAAAA"
+            android:layout_marginEnd="15sp"
+            android:layout_toRightOf="@+id/email"
+
+            tools:text = "Berlin"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/data"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/person_icon_round" />
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginEnd="15sp"
+        android:fontFamily="monospace"
+        android:textColor="#AAAAAA"
+        android:textSize="10sp"
+        tools:text="username"
+        android:layout_centerHorizontal="true"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_marginTop="15sp"
+        android:paddingTop="10sp"
+        android:paddingRight="50sp"
+        android:paddingLeft="50sp">
+
+
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Phone:" />
+
+        <TextView
+
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:fontFamily="serif"
+
+            android:paddingBottom="10sp"
+            android:shadowColor="#959595"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:text="Address"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/street"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:layout_marginBottom="10sp"
+            tools:text="Street" />
+
+        <TextView
+            android:id="@+id/suite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/street"
+            android:layout_marginBottom="10sp"
+            tools:text="home" />
+
+        <TextView
+            android:id="@+id/zip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10sp"
+            tools:text="61-800" />
+        <TextView
+            android:id="@+id/web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zip"
+            android:layout_alignParentEnd="true"
+            tools:text="web: " />
+
+        <TextView
+            android:id="@+id/geo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30sp"
+            android:fontFamily="serif"
+            android:paddingBottom="10sp"
+            android:shadowColor="#959595"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:text="Geo"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/georl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/geo">
+
+            <TextView
+                android:id="@+id/lat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="lat: -37.3159" />
+
+            <TextView
+                android:id="@+id/lng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                tools:text="lat: -37.3159" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/companytxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/georl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30sp"
+            android:fontFamily="serif"
+            android:paddingBottom="10sp"
+            android:shadowColor="#959595"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:text="Job"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/companytxt">
+            <TextView
+                android:id="@+id/Bs"
+                android:layout_marginTop="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                tools:text="Bs" />
+
+            <TextView
+                android:id="@+id/phrase"
+                android:layout_marginTop="5sp"
+                android:layout_below="@id/Bs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="phrase" />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

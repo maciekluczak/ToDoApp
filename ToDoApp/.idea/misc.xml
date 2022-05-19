@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/macie/AndroidStudioProjects/ToDoApp/app/src/main/res/drawable/person_icon_foreground.xml" value="0.1575" />
+        <entry key="..\:/Users/macie/AndroidStudioProjects/ToDoApp/app/src/main/res/layout/activity_main.xml" value="0.23055555555555557" />
+        <entry key="..\:/Users/macie/AndroidStudioProjects/ToDoApp/app/src/main/res/layout/activity_personal_data.xml" value="0.15625" />
+        <entry key="..\:/Users/macie/AndroidStudioProjects/ToDoApp/app/src/main/res/layout/activity_post_comments.xml" value="0.15625" />
+        <entry key="..\:/Users/macie/AndroidStudioProjects/ToDoApp/app/src/main/res/layout/activity_user_posts.xml" value="0.15625" />
+        <entry key="..\:/Users/macie/AndroidStudioProjects/ToDoApp/app/src/main/res/layout/activity_user_task.xml" value="0.15625" />
+        <entry key="..\:/Users/macie/AndroidStudioProjects/ToDoApp/app/src/main/res/layout/comment_holder.xml" value="0.165" />
+        <entry key="..\:/Users/macie/AndroidStudioProjects/ToDoApp/app/src/main/res/layout/item_holder.xml" value="0.1" />
+        <entry key="..\:/Users/macie/AndroidStudioProjects/ToDoApp/app/src/main/res/layout/personal_holder.xml" value="0.25" />
+        <entry key="..\:/Users/macie/AndroidStudioProjects/ToDoApp/app/src/main/res/layout/post_holder.xml" value="0.25" />
+        <entry key="..\:/Users/macie/AndroidStudioProjects/ToDoApp/app/src/main/res/layout/task_holder.xml" value="0.15625" />
+        <entry key="..\:/Users/macie/AndroidStudioProjects/ToDoApp/app/src/main/res/mipmap-anydpi-v26/person_icon.xml" value="0.1405" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
